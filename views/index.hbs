@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemons</title>
+
+</head>
+
+<body>
+
+<div class="container">
+  <form class="all" name="all" action="/pokemot" method="GET">
+    {{!-- <input name="message" type="text" placeholder="Сообщение"> --}}
+    <button class='button'>показать всех покемонов</button>
+  </form>
+
+  <div id="messages"></div>
+
+  <form class="pokemonForm" action="/getpokemon" method="POST">
+    <label>
+      <h2 class='title'>Введите название покемона: pickachu, ditto,kakuna,
+raticate,ivysaur, charmander
+      </h2>
+
+    <h2 class='title'></h2>
+    <input name="type" class= "pokemon__name" type="text" placeholder="pokemon" >
+    </label>
+    <button class="button">Получить всю инфу</button>
+  </form>
+<br>
+<br>
+
+  <form name="addtoDB" action="/addpokemon" method="POST">
+  <div class="pokeContainer">
+  <div class='cardPokemon'>
+        <div class="pokemon__info">
+        Имя покемона
+        <div class='name'> </div>
+        Рост покемона
+        <div class='height'> </div>
+        Вес покемона
+        <div class='weight'></div>
+        Сам покемон
+        <div id="pokemonImage"></div>
+        Его пара
+        <div id="pokemonPairImage"></div>
+      </div>
+
+   </div>
+</div>
+
+     <button id ="add" class="button" type="click">Добавить</button>
+      </div>
+
+
+
+  </form>
+
+</div>
+
+</body>
+
+
+</html>

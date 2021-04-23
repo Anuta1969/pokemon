@@ -1,0 +1,26 @@
+ {{#if username}}
+<div class="registration" >
+         <ul class="navbar>
+            <li class="nav-item">
+              <a class="nav-link" href="/{{username._id}}">{{username.username}}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/logout">ВЫЙТИ</a>
+            </li>
+          </ul>
+
+</div>
+{{else}}
+ <div class="registration" >
+          <ul class="navbar">
+            <li class="nav-item">
+              <a class="nav-link" href="/login">ВОЙТИ</a>
+            </li>
+
+            <br>
+            <li class="nav-item">
+              <a class="nav-link" href="/register">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+            </li>
+          </ul>
+  </div>
+{{/if}}

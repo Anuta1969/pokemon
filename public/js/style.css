@@ -1,0 +1,98 @@
+body {
+
+   background-color: #f3e2f2;
+
+      background-image: url(/js/pokemon.jpg);
+      font-size: 22px;
+          font-family: Nunito, san-serif;
+
+}
+
+.title {
+  color: rgb(255, 71, 230)
+}
+
+a {
+    color: rgb(255, 71, 230);
+    text-decoration: none;
+
+
+}
+
+* {
+
+      box-sizing: border-box;
+}
+
+.container {
+  width: 1000px;
+  margin: auto
+}
+
+.pokeContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardPokemon {
+
+
+    padding: 10px;
+    background-color: #0A223D;
+    color: rgb(245, 183, 229);
+    font-family: Nunito, san-serif;
+    border-radius: 8px;
+    width: 350px;
+    min-height: 210px;
+    padding: 26px;
+    font-size: 24px;
+    text-align: center;
+    margin: 10px
+
+
+}
+
+
+input {
+  width: 300px;
+  height: 40px;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.pokemon__name {
+
+  width: 200px;
+  height: 30px;
+  font-size: 22px;
+}
+
+
+
+.button {
+    width: 300px;
+    min-height: 45px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 19px;
+    border-radius: 4px;
+    background-color: #704766;
+    color: #ffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.nav-item {
+  margin-bottom: 20px;
+}
+
+
+#add {
+  margin-top: 50px;
+}
+
+
+.name , .weight, .height{
+  color:rgb(202, 33, 180)
+}

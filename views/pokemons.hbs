@@ -1,0 +1,33 @@
+{{#each pokemon}}
+
+  <div class='cardPokemon'>
+      <div class="pokemon__info">
+        Имя покемона
+        <div class='name'>{{this.name}} </div>
+
+        Рост покемона
+        <div class='height'>{{this.height}} </div>
+        Вес покемона
+        <div class='weight'>{{this.weight}}</div>
+        Сам покемон
+        <div id="pokemonImage">
+          <img src="{{this.image}}" alt="2"></div>
+        Его пара
+
+      {{#if this.pairImage}}
+        <div id="pokemonPairImage">
+               <img src="{{this.pairImage}}" alt="3"></div>
+    {{else}}
+    <div> в поиске</div>
+  {{/if}}
+
+
+
+   </div>
+   </div>
+
+  {{/each}}
+
+
+
+
